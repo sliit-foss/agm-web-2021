@@ -1,0 +1,25 @@
+{
+  "name": "agm2021",
+  "version": "1.0.0",
+  "description": "Thanks for downloading this theme!",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sliit-foss/AGM_WEB.git"
+  },
+  "author": "@sliitfoss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sliit-foss/AGM_WEB/issues"
+  },
+  "homepage": "https://github.com/sliit-foss/AGM_WEB#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
