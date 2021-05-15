@@ -670,58 +670,58 @@
 
       <div class="container">
         <div class="section-header">
-          <h2>Sponsors</h2>
+          <h2>Collaborations</h2>
         </div>
 
         <div class="row no-gutters supporters-wrap clearfix">
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="img/supporters/1.png" class="img-fluid" alt="">
+              <img src="img/supporters/devops.png" class="img-fluid" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="img/supporters/2.png" class="img-fluid" alt="">
+              <img src="img/supporters/figma.png" class="img-fluid" alt="">
             </div>
           </div>
         
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="img/supporters/3.png" class="img-fluid" alt="">
+              <img src="img/supporters/gdg.png" class="img-fluid" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="img/supporters/4.png" class="img-fluid" alt="">
+              <img src="img/supporters/git.png" class="img-fluid" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="img/supporters/5.png" class="img-fluid" alt="">
+              <img src="img/supporters/kubsl.png" class="img-fluid" alt="">
             </div>
           </div>
         
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="img/supporters/6.png" class="img-fluid" alt="">
+              <img src="img/supporters/ng.png" class="img-fluid" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src="img/supporters/7.png" class="img-fluid" alt="">
+              <img src="img/supporters/platf.png" class="img-fluid" alt="">
             </div>
           </div>
           
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="img/supporters/8.png" class="img-fluid" alt="">
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -966,7 +966,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
+              <address>SLIIT Malabe</address>
             </div>
           </div>
 
@@ -974,7 +974,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              <p><a href="tel:+94775633985">+94 77 56339 85</a></p>
             </div>
           </div>
 
@@ -982,7 +982,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p><a href="mailto:info@example.com">infosliitfoss@gmail.com</a></p>
             </div>
           </div>
 
@@ -991,7 +991,7 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form id="feedback-form">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -1097,6 +1097,21 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
+  <!-- EmailJs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('user_WyMiG19mwb6vTGJwqJq5C');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('feedback-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_664o6wc', 'template_1nhqybf', this, 'user_WyMiG19mwb6vTGJwqJq5C');
+            });
+        }
+    </script>
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
